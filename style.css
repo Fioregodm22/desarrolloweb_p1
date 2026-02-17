@@ -1,5 +1,93 @@
-/* ── Página 2: Gallery ── */
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Fuentes Ubuntu ── */
+.ubuntu-medium {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ubuntu-bold {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ubuntu-regular {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+}
+
+/* ── Navbar ── */
+header {
+  width: 100%;
+}
+
+.navbar {
+  background-color: #9b59b6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.navbar-brand {
+  color: #fff;
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+  color: #4a0080;
+  transition: opacity 0.2s;
+}
+
+.navbar-links a:hover {
+  opacity: 0.75;
+}
+
+/* ── Saludo (página hola) ── */
+.hero {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 60px);
+}
+
+.saludo {
+  font-size: 6rem;
+  color: #2c2c2c;
+}
+
+/* ── Galería (página imágenes) ── */
 .p2 {
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,6 +138,103 @@
   line-height: 1.5;
 }
 
+/* ── Formulario ── */
+.form-main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 2rem;
+}
+
+.form-container {
+  background: #fff;
+  padding: 3rem 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(155, 89, 182, 0.12);
+  width: 100%;
+  max-width: 480px;
+}
+
+.form-heading {
+  font-size: 1.8rem;
+  color: #2c2c2c;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #2c2c2c;
+}
+
+.form-group input,
+.form-group select {
+  padding: 0.75rem 1.1rem;
+  border: 2px solid #d1b3e8;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-family: "Ubuntu", sans-serif;
+  outline: none;
+  background-color: #fff;
+  color: #2c2c2c;
+  cursor: pointer;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%239b59b6' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1.1rem center;
+  padding-right: 2.5rem;
+}
+
+.form-group input {
+  background-image: none;
+  padding-right: 1.1rem;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #9b59b6;
+  box-shadow: 0 0 0 3px rgba(155, 89, 182, 0.18);
+}
+
+/* ── Botón ── */
+.navigation-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+}
+
+.button {
+  background-color: #9b59b6;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: background-color 0.2s, transform 0.1s;
+  display: inline-block;
+}
+
+.button:hover {
+  background-color: #8e44ad;
+  transform: translateY(-1px);
+}
+
+.button:active {
+  transform: translateY(0);
+}
+
 /* ── Footer ── */
 .footer {
   background-color: #9b59b6;
@@ -60,147 +245,4 @@
 .footer p {
   color: #fff;
   font-size: 0.9rem;
-}
-
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: "Ubuntu", sans-serif;
-    min-height: 100vh;
-    background-color: #f5f5f5;
-}
-
-/* ── Fuentes Ubuntu ── */
-.ubuntu-medium {
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-}
-
-.ubuntu-bold {
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.ubuntu-regular {
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #fff;
-}
-
-/* ── Navbar ── */
-header {
-    width: 100%;
-}
-
-.navbar {
-    background-color: #9b59b6;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-}
-
-.navbar-brand {
-    color: #fff;
-    font-size: 1.4rem;
-    letter-spacing: 0.05em;
-}
-
-.navbar-links {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-}
-
-.navbar-links a {
-    text-decoration: none;
-    font-size: 1rem;
-    transition: opacity 0.2s;
-}
-
-.navbar-links a:hover {
-    opacity: 0.75;
-}
-
-/* ── Contenedor principal del formulario ── */
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: calc(100vh - 60px);
-}
-
-.form-container {
-    background: #fff;
-    padding: 3rem 2.5rem;
-    border-radius: 16px;
-    box-shadow: 0 4px 24px rgba(155, 89, 182, 0.12);
-    width: 100%;
-    max-width: 420px;
-}
-
-/* ── Grupos del formulario ── */
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    margin-bottom: 4rem; /* espacio de 4rem entre cada campo */
-}
-
-.form-group label {
-    font-size: 900px; /* Nota: 900px es enorme; si querías font-weight 900 usa font-weight abajo */
-    font-size: 1.1rem;
-    font-weight: 900;
-    color: #2c2c2c;
-}
-
-.form-group input {
-    padding: 0.75rem 1.1rem;
-    border: 2px solid #d1b3e8;
-    border-radius: 50px; /* bordes redondos */
-    font-size: 1rem;
-    font-family: "Ubuntu", sans-serif;
-    outline: none;
-    transition: border-color 0.2s, box-shadow 0.2s;
-}
-
-.form-group input:focus {
-    border-color: #9b59b6;
-    box-shadow: 0 0 0 3px rgba(155, 89, 182, 0.18);
-}
-
-/* ── Botón Submit ── */
-.navigation-buttons {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.button {
-    background-color: #9b59b6;
-    color: #fff;
-    text-decoration: none;
-    padding: 0.75rem 2rem;
-    border-radius: 50px; /* bordes redondos */
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 700;
-    font-size: 1rem;
-    transition: background-color 0.2s, transform 0.1s;
-    display: inline-block;
-}
-
-.button:hover {
-    background-color: #8e44ad;
-    transform: translateY(-1px);
-}
-
-.button:active {
-    transform: translateY(0);
 }
