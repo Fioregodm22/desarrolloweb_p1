@@ -1,4 +1,4 @@
-/* Reset básico */
+
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +13,7 @@ body {
   flex-direction: column;
 }
 
-/* ── Fuentes Ubuntu ── */
+
 .ubuntu-medium {
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
@@ -33,7 +33,7 @@ body {
   color: #fff;
 }
 
-/* ── Navbar ── */
+
 header {
   width: 100%;
 }
@@ -71,7 +71,7 @@ header {
   opacity: 0.75;
 }
 
-/* ── Saludo (página hola) ── */
+
 .hero {
   flex: 1;
   display: flex;
@@ -85,7 +85,7 @@ header {
   color: #2c2c2c;
 }
 
-/* ── Galería (página imágenes) ── */
+
 .p2 {
   flex: 1;
   display: flex;
@@ -138,7 +138,7 @@ header {
   line-height: 1.5;
 }
 
-/* ── Formulario ── */
+
 .form-main {
   flex: 1;
   display: flex;
@@ -206,7 +206,7 @@ header {
   box-shadow: 0 0 0 3px rgba(155, 89, 182, 0.18);
 }
 
-/* ── Botón ── */
+
 .navigation-buttons {
   display: flex;
   justify-content: flex-end;
@@ -235,7 +235,7 @@ header {
   transform: translateY(0);
 }
 
-/* ── Footer ── */
+
 .footer {
   background-color: #9b59b6;
   padding: 1.5rem 2rem;
