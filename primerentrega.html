@@ -15,14 +15,13 @@
                 <ul class="navbar-links">
                     <li><a href="primerentrega.html">Inicio</a></li>
                     <li><a href="formulario.html">Formulario de sodas</a></li>
-                    <li><a href="pagina3.html">Recomendaciones</a></li>
                 </ul>
             </nav>
         </header>
 
         <main class="form-main">
             <div class="form-container">
-                <form>
+                <form id="loginForm">
                     <div class="form-group">
                         <label for="correo" class="ubuntu-bold">Correo:</label>
                         <input type="text" id="correo" name="correo" placeholder="tucorreo@ejemplo.com">
@@ -33,16 +32,16 @@
                         <input type="password" id="password" name="password" placeholder="••••••••">
                     </div>
 
+                    <p id="error-message" style="color: #e74c3c; font-size: 0.9rem; text-align: center; margin-top: 1rem; display: none;">Correo o contraseña incorrectos</p>
+
                     <div class="navigation-buttons">
-                        <a href="pagina2.html" class="button">Submit</a>
+                        <button type="submit" class="button">Submit</button>
                     </div>
                 </form>
             </div>
         </main>
 
-        <footer class="footer">
-            <p class="ubuntu-regular">&copy; 2026 Fiorella de Medina. Todos los derechos reservados.</p>
-        </footer>
+        <script src="login.js"></script>
 
     </body>
 </html>
