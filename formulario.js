@@ -1,3 +1,9 @@
+//los que estan guardados en datos usuarios login
+//login correcto
+//token 
+
+//falta otra pagina y ahora hay q bloquearlas 
+
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.querySelector('form');
     
@@ -35,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const resultado = await response.json();
             
             if (resultado.success) {
-                // Redirigir a pagina2.html
+                // redirigir a pagina2.html
                 window.location.href = 'pagina2.html';
             }
         } catch (error) {

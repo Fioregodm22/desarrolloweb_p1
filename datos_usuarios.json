@@ -6,5 +6,13 @@
     "password": "9900",
     "sodaPreferida": "manzanita",
     "cantidadAlDia": "3"
+  },
+  {
+    "nombre": "Pedro",
+    "apellido": "Flores",
+    "correo": "pedroflores@gmail.com",
+    "password": "1100",
+    "sodaPreferida": "pepsi",
+    "cantidadAlDia": "4"
   }
 ]
