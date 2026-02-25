@@ -43,12 +43,12 @@ app.post('/login', (req, res) => {
 app.post('/guardar-datos', (req, res) => {
     const datos = req.body;
     
-    console.log('Nombre:', datos.nombre);
-    console.log('Apellido:', datos.apellido);
-    console.log('Correo:', datos.correo);
-    console.log('Password:', datos.password);
-    console.log('Soda Preferida:', datos.sodaPreferida);
-    console.log('Cantidad al día:', datos.cantidadAlDia);
+   // console.log('Nombre:', datos.nombre);
+   // console.log('Apellido:', datos.apellido);
+   // console.log('Correo:', datos.correo);
+   // console.log('Password:', datos.password);
+    //console.log('Soda Preferida:', datos.sodaPreferida);
+    //console.log('Cantidad al día:', datos.cantidadAlDia);
 
     
     const rutaArchivo = path.join(__dirname, 'datos_usuarios.json');
@@ -62,7 +62,7 @@ app.post('/guardar-datos', (req, res) => {
     datosExistentes.push(datos);
     fs.writeFileSync(rutaArchivo, JSON.stringify(datosExistentes, null, 2));
     
-    console.log('✓ Usuario registrado correctamente\n');
+  //  console.log('✓ Usuario registrado correctamente\n');
     res.json({ success: true, message: 'Datos guardados correctamente' });
 });
 

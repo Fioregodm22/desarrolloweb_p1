@@ -4,6 +4,8 @@
 
 //falta otra pagina y ahora hay q bloquearlas 
 
+//falta hacer el footer y header dinamicos
+
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.querySelector('form');
     

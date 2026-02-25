@@ -6,7 +6,7 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
     const errorMessage = document.getElementById('error-message');
     
     try {
-        // Solicitar validación al servidor
+        // validacion al servidor
         const response = await fetch('http://localhost:3000/login', {
             method: 'POST',
             headers: {
@@ -18,7 +18,7 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
         const resultado = await response.json();
         
         if (resultado.success) {
-            // Crear token con tiempo 
+            //  token con tiempo 
             const token = {
                 correo: correo,
                 expiracion: Date.now() + 20000 // 20 segundos en milisegundos
@@ -27,7 +27,7 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
             
             localStorage.setItem('authToken', JSON.stringify(token));
             
-            console.log('Login exitoso - Token válido por 20 segundos');
+           // console.log('Login exitoso - Token válido por 20 segundos');
             
           
             window.location.href = 'pagina2.html';
@@ -40,7 +40,7 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
             }, 3000);
         }
     } catch (error) {
-        console.error('Error al validar login:', error);
+        console.error('Error:', error);
         alert('Error al conectar con el servidor. Asegúrate de que esté corriendo.');
     }
 });
