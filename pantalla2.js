@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', async function() {
     configurarFiltros();
 }); //espera
 
-
 async function cargarTodosLosPokemones() {
     try {
   
@@ -32,16 +31,6 @@ async function cargarTodosLosPokemones() {
 function mostrarPokemones(pokemones) {
     const container = document.getElementById('pokemon-container');
     
-
-    const nombrebien = nombre.charAt(0).toUpperCase() + nombre.slice(1);
-    
-    // Crear HTML con los datos del Pokémon
-    container.innerHTML = `
-        <div class="pokemon-card">
-            <h2 class="ubuntu-bold">${nombrebien}</h2>
-            <img src="${imagen}" alt="${nombrebien}" class="pokemon-image">
-        </div>
-    `;
     if (pokemones.length === 0) {
         container.innerHTML = '<p style="color: #666;">No se encontraron Pokémon</p>';
         return;
@@ -78,9 +67,20 @@ function configurarFiltros() {
     const filtroTipo = document.getElementById('filtro-tipo');
     const btnFiltrar = document.getElementById('btn-filtrar');
     const btnLimpiar = document.getElementById('btn-limpiar');
+
+    
     
     btnFiltrar.addEventListener('click', filtrarPokemones);
     btnLimpiar.addEventListener('click', limpiarFiltros);
+
+     
+    // También filtrar al presionar Enter
+    filtroId.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') filtrarPokemones();
+    });
+    filtroNombre.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') filtrarPokemones();
+    });
    
 }
 
@@ -90,7 +90,7 @@ function filtrarPokemones() {
     const filtroNombre = document.getElementById('filtro-nombre').value.trim().toLowerCase();
     const filtroTipo = document.getElementById('filtro-tipo').value.toLowerCase();
     
-    let pokemonesFiltrados = todosLosPokemones;
+    let pokemonesFiltrados = pokemoneslista;
     
     // Filtrar por ID
     if (filtroId !== '') {
