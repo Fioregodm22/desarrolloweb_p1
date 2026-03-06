@@ -31,10 +31,10 @@ document.addEventListener('DOMContentLoaded', async function() {
 function mostrarPokemon(nombre, imagen, datosPokemon) {
     const container = document.getElementById('pokemon-container');
     
-
+    // Capitalizar nombre
     const nombrebien = nombre.charAt(0).toUpperCase() + nombre.slice(1);
     
-   
+    // Crear HTML con los datos del Pokémon
     container.innerHTML = `
         <div class="pokemon-card">
             <h2 class="ubuntu-bold">${nombrebien}</h2>

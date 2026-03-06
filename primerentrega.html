@@ -9,16 +9,11 @@
     </head>
     <body>
 
-        <header>
-            <nav class="navbar">
-                <span class="navbar-brand ubuntu-bold">Fiorella de Medina</span>
- 
-            </nav>
-        </header>
+        <div id="navbar-placeholder"></div>
 
-        <main>
+        <main class="form-main">
             <div class="form-container">
-                <form>
+                <form id="loginForm">
                     <div class="form-group">
                         <label for="correo" class="ubuntu-bold">Correo:</label>
                         <input type="text" id="correo" name="correo" placeholder="tucorreo@ejemplo.com">
@@ -29,12 +24,19 @@
                         <input type="password" id="password" name="password" placeholder="••••••••">
                     </div>
 
+                    <p id="error-message" style="color: #e74c3c; font-size: 0.9rem; text-align: center; margin-top: 1rem; display: none;">Correo o contraseña incorrectos</p>
+
                     <div class="navigation-buttons">
-                        <a href="pagina2.html" class="button">Submit</a>
+                        <button type="submit" class="button">Submit</button>
                     </div>
                 </form>
             </div>
         </main>
+  
+        <div id="footer-placeholder"></div>
+        <script src="components.js"></script>
+
+        <script src="login.js"></script>
 
     </body>
 </html>
