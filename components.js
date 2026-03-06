@@ -33,7 +33,7 @@ function cargarComponentes() {
     if (footerPlaceholder) {
         footerPlaceholder.innerHTML = footerHTML;
     }
-    
+
 }
 
 if (document.readyState === 'loading') {

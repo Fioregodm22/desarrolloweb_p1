@@ -32,11 +32,10 @@ async function cargarTodosLosPokemones() {
 function mostrarPokemones(pokemones) {
     const container = document.getElementById('pokemon-container');
     
-<<<<<<< Updated upstream
 
     const nombrebien = nombre.charAt(0).toUpperCase() + nombre.slice(1);
     
-   
+    // Crear HTML con los datos del Pokémon
     container.innerHTML = `
         <div class="pokemon-card">
             <h2 class="ubuntu-bold">${nombrebien}</h2>
