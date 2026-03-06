@@ -5,7 +5,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css" />
-        <title>Primera entrega</title>
+        <title>Pokédex</title>
     </head>
     <body>
 
@@ -15,9 +15,56 @@
             </nav>
         </header>
 
+<<<<<<< Updated upstream
         <main class="p2">
             <h1 class="ubuntu-bold saludo">¡Hola! 😁</h1>
         </main>
 
+=======
+        <main class="pokemon-main">
+            <h1 class="ubuntu-bold pokemon-title">Pokédex</h1>
+            
+            <!-- Filtros -->
+            <div class="filtros-container">
+                <input type="number" id="filtro-id" placeholder="Filtrar por ID" min="1" max="151">
+                <input type="text" id="filtro-nombre" placeholder="Filtrar por nombre">
+                <select id="filtro-tipo">
+                    <option value="">Todos los tipos</option>
+                    <option value="normal">Normal</option>
+                    <option value="fire">Fuego</option>
+                    <option value="water">Agua</option>
+                    <option value="grass">Planta</option>
+                    <option value="electric">Eléctrico</option>
+                    <option value="ice">Hielo</option>
+                    <option value="fighting">Lucha</option>
+                    <option value="poison">Veneno</option>
+                    <option value="ground">Tierra</option>
+                    <option value="flying">Volador</option>
+                    <option value="psychic">Psíquico</option>
+                    <option value="bug">Bicho</option>
+                    <option value="rock">Roca</option>
+                    <option value="ghost">Fantasma</option>
+                    <option value="dragon">Dragón</option>
+                    <option value="dark">Siniestro</option>
+                    <option value="steel">Acero</option>
+                    <option value="fairy">Hada</option>
+                </select>
+                <button id="btn-filtrar" class="button">Buscar</button>
+                <button id="btn-limpiar" class="button button-secondary">Limpiar</button>
+            </div>
+            
+            
+            <div id="pokemon-container" class="pokemon-container">
+                <p style="color: #666; text-align: center;">Cargando Pokémon...</p>
+            </div>
+        </main>
+
+        <div id="footer-placeholder"></div>
+        
+        <script src="components.js"></script>
+        <script src="auth.js"></script>
+        <script src="pantalla2.js"></script>
+
+>>>>>>> Stashed changes
     </body>
 </html>
