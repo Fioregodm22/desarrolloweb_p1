@@ -42,7 +42,6 @@ function mostrarPokemones(pokemones) {
             <img src="${imagen}" alt="${nombrebien}" class="pokemon-image">
         </div>
     `;
-=======
     if (pokemones.length === 0) {
         container.innerHTML = '<p style="color: #666;">No se encontraron Pokémon</p>';
         return;
@@ -119,5 +118,4 @@ function limpiarFiltros() {
     document.getElementById('filtro-nombre').value = '';
     document.getElementById('filtro-tipo').value = '';
     mostrarPokemones(pokemoneslista);
->>>>>>> Stashed changes
 }
