@@ -8,6 +8,7 @@ const navbarHTML = `
         <ul class="navbar-links">
             <li><a href="primerentrega.html">Inicio</a></li>
             <li><a href="pagina2.html">Pokemon</a></li>
+            <li><a href="pagina7.html">Pelea Pokemon</a></li>
             <li><a href="formulario.html">Formulario de sodas</a></li>
             <li><a href="pagina3.html">Recomendaciones</a></li>
         </ul>

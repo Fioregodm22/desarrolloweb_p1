@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" />
+        <title>Batalla Pokémon</title>
+    </head>
+    <body>
+
+        <div id="navbar-placeholder"></div>
+
+        <main class="batalla-main">
+            <h1 class="ubuntu-bold batalla-title">Pelea Pokémon</h1>
+            
+            <!-- Selección de Pokémon -->
+            <div id="seleccion-container" class="seleccion-container">
+                <h2 class="ubuntu-bold">Selecciona dos Pokémon para la batalla</h2>
+                <div class="selectores">
+                    <div class="selector-pokemon">
+                        <label class="ubuntu-bold">Pokémon 1:</label>
+                        <select id="pokemon1-select">
+                            <option value="">Cargando...</option>
+                        </select>
+                    </div>
+                    <div class="selector-pokemon">
+                        <label class="ubuntu-bold">Pokémon 2:</label>
+                        <select id="pokemon2-select">
+                            <option value="">Cargando...</option>
+                        </select>
+                    </div>
+                </div>
+                <button id="btn-iniciar-batalla" class="button batalla-btn">¡Iniciar Batalla!</button>
+            </div>
+
+            <!-- Arena de Batalla -->
+            <div id="batalla-container" class="batalla-container" style="display: none;">
+                <div class="arena">
+                    <!-- Pokémon 1 -->
+                    <div class="pokemon-batalla" id="pokemon1-card">
+                        <h3 class="ubuntu-bold" id="pokemon1-nombre"></h3>
+                        <img id="pokemon1-imagen" class="pokemon-batalla-img" src="" alt="">
+                        <div class="vida-container">
+                            <div class="vida-label">HP: <span id="pokemon1-hp">100</span>%</div>
+                            <div class="vida-barra">
+                                <div id="pokemon1-vida" class="vida-fill"></div>
+                            </div>
+                        </div>
+                        <div class="stats">
+                            <p><strong>Ataque:</strong> <span id="pokemon1-ataque"></span></p>
+                            <p><strong>Defensa:</strong> <span id="pokemon1-defensa"></span></p>
+                        </div>
+                    </div>
+
+                    <!-- VS -->
+                    <div class="vs-text">VS</div>
+
+                    <!-- Pokémon 2 -->
+                    <div class="pokemon-batalla" id="pokemon2-card">
+                        <h3 class="ubuntu-bold" id="pokemon2-nombre"></h3>
+                        <img id="pokemon2-imagen" class="pokemon-batalla-img" src="" alt="">
+                        <div class="vida-container">
+                            <div class="vida-label">HP: <span id="pokemon2-hp">100</span>%</div>
+                            <div class="vida-barra">
+                                <div id="pokemon2-vida" class="vida-fill"></div>
+                            </div>
+                        </div>
+                        <div class="stats">
+                            <p><strong>Ataque:</strong> <span id="pokemon2-ataque"></span></p>
+                            <p><strong>Defensa:</strong> <span id="pokemon2-defensa"></span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Log de batalla -->
+                <div class="batalla-log">
+                    <h3 class="ubuntu-bold">Registro de Batalla</h3>
+                    <div id="log-container"></div>
+                </div>
+
+                <!-- Controles -->
+                <div class="controles">
+                    <button id="btn-turno" class="button batalla-btn">Siguiente Turno</button>
+                    <button id="btn-reiniciar" class="button button-secondary">Nueva Batalla</button>
+                </div>
+            </div>
+
+            <!-- Pantalla de Victoria -->
+            <div id="victoria-container" class="victoria-container" style="display: none;">
+                <h2 class="ubuntu-bold ganador-text">¡GANADOR! 🏆</h2>
+                <img id="ganador-imagen" class="ganador-imagen" src="" alt="">
+                <h3 class="ubuntu-bold ganador-nombre" id="ganador-nombre"></h3>
+                <button id="btn-otra-batalla" class="button batalla-btn">Otra Batalla</button>
+            </div>
+        </main>
+
+        <div id="footer-placeholder"></div>
+        
+        <script src="components.js"></script>
+        <script src="auth.js"></script>
+        <script src="pagina7.js"></script>
+
+    </body>
+</html>
